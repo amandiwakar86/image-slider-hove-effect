@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(18, 2, 56);
+    transition: all ease 0.5s;
+}
+
+#image-container {
+    width: 500px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+#image-container img {
+    width: 25%;
+    height: 100%;
+    object-fit: cover;
+    border: 1px solid black;
+    transition: all ease 0.5s;
+    overflow: hidden;
+    filter: blur(1px);
+}
+
+#image-container img:hover {
+    width: 100%;
+    height: 100%;
+    filter: blur(0px);
+}
